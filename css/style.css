@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar .container .current-position {
+  margin-bottom: 20px;
+}
+
+.sidebar .container .current-position p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+}
+
+.sidebar .container .dots {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .container .dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 50%;
+  background-color: rgba(201, 197, 197, 0.5);
+}
+
+.sidebar .container .dots .line {
+  width: 1px;
+  height: 40px;
+  background-color: #000;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .menu .menu-icon,
+.hero .menu .menu-name {
+  padding: 10px;
+}
+
+.hero .menu .menu-icon {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .menu .menu-icon .m-line {
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading p {
+  margin: 20px 0;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.content .box {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content .box .intro-img {
+  margin-bottom: 10px;
+}
+
+.content .box .intro-img img {
+  width: 100%;
+}
+
+.content .box .types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .box .types .type {
+  width: 49%;
+}
+
+.content .box .types .type .type-img {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.content .box .types .type .type-img img {
+  width: 100%;
+}
+
+.content .box .types .type .info h1 {
+  font-size: 2.5rem;
+}
+
+.content .box .types .type .info p {
+  line-height: 1.687;
+  font-size: 1.2rem;
+}
+
+.footer {
+  margin-left: 100px;
+  padding: 50px;
+  color: #ffffff;
+  background-color: #444242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a,
+.footer a:visited {
+  color: #fff;
+}
+
+.footer .col h2 {
+  margin: 0;
+}
+
+.footer .col p {
+  margin: 10px 0;
+}
+
+.footer .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
